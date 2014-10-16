@@ -18,4 +18,8 @@ class Test_Complejo < Test::Unit::TestCase
 	def test_resta
 		assert_equal("2+1i", Complejo.new(4,3).resta(2,2))
 	end
+
+	def test_producto
+		assert_equal("2+14i", Complejo.new(4,3).producto(2,2))
+	end
 end
