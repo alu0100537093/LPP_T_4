@@ -2,12 +2,11 @@ class Complejo
 attr_reader :r , :im
 
 
-	def initialize(r,im)
+	def initialize(r,im) #Constructor de la clase
 		@r,@im = r, im
 	end
 
 
-	
 	def to_s #Metodo que muestra el numero complejo
 		"#{@r}+#{@im}i"
 	end
@@ -28,6 +27,12 @@ attr_reader :r , :im
 	def producto (r,im) #Metodo que multiplica numeros complejos
 		re = (@r * r) - (@im * im)
 		ima = (@r * r) + (@im * im)
+		"#{re}+#{ima}i"
+	end
+	
+	def division (r,im) #Metodo que divide numeros complejos
+		re = ((@r * r) + (@im * im))/(r*r + im*im)
+		ima = ((@im * r) - (@r * im))/(r*r + im*im)
 		"#{re}+#{ima}i"
 	end
 	
