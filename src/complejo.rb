@@ -25,4 +25,10 @@ attr_reader :r , :im
 		"#{re}+#{ima}i"
 	end
 	
+	def producto (r,im) #Metodo que multiplica numeros complejos
+		re = (@r * r) - (@im * im)
+		ima = (@r * r) + (@im * im)
+		"#{re}+#{ima}i"
+	end
+	
 end
