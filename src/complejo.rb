@@ -36,4 +36,10 @@ attr_reader :r , :im
 		"#{re}+#{ima}i"
 	end
 	
+	def escalar (e) #Metodo que multiplica numeros complejos por un escalar
+		re = @r * e
+		ima = @im * e
+		"#{re}+#{ima}i"
+	end
+	
 end
