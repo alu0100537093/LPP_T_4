@@ -26,4 +26,9 @@ class Test_Complejo < Test::Unit::TestCase
 	def test_division
 		assert_equal("1+3i", Complejo.new(8,4).division(2,-2))
 	end
+
+	def test_escalar
+		assert_equal("12+8i", Complejo.new(3,2).escalar(4))
+	end
+
 end
