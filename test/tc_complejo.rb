@@ -22,4 +22,8 @@ class Test_Complejo < Test::Unit::TestCase
 	def test_producto
 		assert_equal("2+14i", Complejo.new(4,3).producto(2,2))
 	end
+
+	def test_division
+		assert_equal("1+3i", Complejo.new(8,4).division(2,-2))
+	end
 end
