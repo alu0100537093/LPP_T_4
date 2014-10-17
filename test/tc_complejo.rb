@@ -1,4 +1,4 @@
-require "../src/complejo.rb"
+require "complejo"
 require "test/unit"
 
 
